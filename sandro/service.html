@@ -53,6 +53,9 @@
         .play{
             margin-left: -35px;margin-top: -50px;width: 80px; height: 100px ;top: 50%;left:50%; z-index: 1; color: white; font-size: 50pt;
         }
+        .clickable{
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -87,7 +90,6 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0 pe-4 border-end border-5 border-primary">
                 <a href="index.html" class="nav-item nav-link">Início</a>
-                <a href="about.html" class="nav-item nav-link">Sobre</a>
                 <a href="service.html" class="nav-item nav-link active">Serviços</a>
                 <a href="contact.html" class="nav-item nav-link">Contato</a>
             </div>
@@ -131,26 +133,26 @@
                 </div>
             </div>
             <div class="row gx-0 mb-lg-0">
-                <div class="col-md-6 mb-3 text-center mt-5 mt-md-1" >
-                    <div class="position-relative">
-                        <img class="" src="img/Servicos/s1.jpg" style="max-width: 90vw;height: 60vh;">
-                    </div>
-                </div>
                 <div class="col-md-6 mb-3 text-center mt-5 mt-md-1">
                     <div class="position-relative">
-                        <img class="" src="img/Servicos/s2.jpg" style="max-width: 90vw;height: 60vh;">
+                        <img class="clickable" id="s1" ontouchmove="closefull()" onclick="fullscreen('s1')" src="img/Servicos/s1.jpg" style="max-width: 90vw;max-height: 80vw;height: 60vh;">
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3 text-center mt-5 mt-md-1" >
+                    <div class="position-relative">
+                        <img class="clickable" id="s2" ontouchmove="closefull()" onclick="fullscreen('s2')" src="img/Servicos/s2.jpg" style="max-width: 90vw;max-height: 80vw;height: 60vh;">
                     </div>
                 </div>
             </div>
             <div class="row gx-0 mb-lg-0">
                 <div class="col-md-6 mb-3 text-center mt-5 mt-md-1" >
                     <div class="position-relative">
-                        <img class="" src="img/Servicos/s3.jpg" style="max-width: 90vw;height: 60vh;">
+                        <img class="clickable" id="s3" ontouchmove="closefull()" onclick="fullscreen('s3')" src="img/Servicos/s3.jpg" style="max-width: 90vw;max-height: 80vw;height: 60vh;">
                     </div>
                 </div>
                 <div class="col-md-6 mb-3 text-center mt-5 mt-md-1" >
                     
-                    <div  class="position-relative" onclick="fullscreen()">
+                    <div  class="position-relative clickable" ontouchmove="closefull()" onclick="fullscreen('video')">
                         
                             <video  id="video"  style="background-color: black;height: 60vh;" src="img/Servicos/s4.mp4" allowfullscreen></video>
 
@@ -162,31 +164,31 @@
             <div class="row gx-0 mb-lg-0">
                 <div class="col-md-6 mb-3 text-center mt-5 mt-md-1" >
                     <div class="position-relative">
-                        <img class="" src="img/Servicos/s5.jpg" style="max-width: 90vw;height: 60vh;">
+                        <img id="s5" ontouchmove="closefull('')" onclick="fullscreen('s5')" class="clickable" src="img/Servicos/s5.jpg" style="max-width: 90vw;height: 60vh;">
                     </div>
                 </div>
                 <div class="col-md-6 mb-3 text-center mt-5 mt-md-1" >
                     <div class="position-relative">
-                        <img class="" src="img/Servicos/s6.jpg" style="max-width: 90vw;height: 60vh;">
-                    </div>
-                </div>
-            </div>
-            <div class="row gx-0 mb-lg-0">
-                <div class="col-md-6 mb-3 text-center mt-5 mt-md-1" >
-                    <div class="position-relative">
-                        <img class="" src="img/Servicos/s7.jpg" style="max-width: 90vw;height: 60vh;">
-                    </div>
-                </div>
-                <div class="col-md-6 mb-3 text-center mt-5 mt-md-1" >
-                    <div class="position-relative">
-                        <img class="" src="img/Servicos/s8.jpg" style="max-width: 90vw;height: 60vh;">
+                        <img id="s6" ontouchmove="closefull('')" onclick="fullscreen('s6')" class="clickable" src="img/Servicos/s6.jpg" style="max-width: 90vw;height: 60vh;">
                     </div>
                 </div>
             </div>
             <div class="row gx-0 mb-lg-0">
                 <div class="col-md-6 mb-3 text-center mt-5 mt-md-1" >
                     <div class="position-relative">
-                        <img class="" src="img/Servicos/s9.jpg" style="max-width: 90vw;height: 60vh;">
+                        <img id="s7" ontouchmove="closefull('')" onclick="fullscreen('s7')" class="clickable" src="img/Servicos/s7.jpg" style="max-width: 90vw;height: 60vh;">
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3 text-center mt-5 mt-md-1" >
+                    <div class="position-relative">
+                        <img id="s8" ontouchmove="closefull('')" onclick="fullscreen('s8')" class="clickable" src="img/Servicos/s8.jpg" style="max-width: 90vw;height: 60vh;">
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-0 mb-lg-0">
+                <div class="col-md-6 mb-3 text-center mt-5 mt-md-1" >
+                    <div class="position-relative">
+                        <img id="s9" ontouchmove="closefull('')" onclick="fullscreen('s9')" class="clickable" src="img/Servicos/s9.jpg" style="max-width: 90vw;height: 60vh;">
                     </div>
                 </div>
             </div>
@@ -209,7 +211,6 @@
                     <hr class="w-25 text-secondary mb-4" style="opacity: 1;">
                     <div class="d-flex flex-column justify-content-start">
                         <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>ínicio</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Sobre</a>
                         <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Serviços</a>
                         <a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Contato</a>
                     </div>
@@ -246,8 +247,20 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
-        function fullscreen(){
-                document.getElementById('video').webkitRequestFullscreen();;
+            function closefull() {
+                if(document.fullscreen){
+                    if (document.exitFullscreen) {
+                        document.exitFullscreen();
+                    } else if (document.webkitExitFullscreen) { /* Safari */
+                        document.webkitExitFullscreen();
+                    } else if (document.msExitFullscreen) { /* IE11 */
+                        document.msExitFullscreen();
+                    }
+                }
+            }
+        
+        function fullscreen(id){
+                document.getElementById(id).webkitRequestFullscreen();
 
         }
     </script>
